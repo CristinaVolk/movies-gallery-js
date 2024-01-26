@@ -3,7 +3,7 @@ export function createMovieCard(movie) {
     const heartIcon = isFavourite ? 'favourite.svg' : 'not-favourite.svg';
     return `
                 <div data-movie-id="${id}" class="movie-card">
-                    <img src="${imageUrl}" alt="moviePicture"/>
+                    <img class="movie-card-img" src="${imageUrl}" alt="moviePicture"/>
                     <h3>${movieName}</h3>
                     <strong>${releaseYear}</strong>
                     <p>${description}</p>

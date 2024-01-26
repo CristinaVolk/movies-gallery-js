@@ -3,6 +3,7 @@ import {ALL_MOVIES, FAVOURITE_MOVIES} from "./localStorage/consts.js";
 import {createMovieCard} from "./movieCard/createMovieCard.js";
 import {changeUI, renderNewListId} from "./btnSwitchLists/actions.js";
 import {ModalMovieCard} from "./modal/ModalMovieCard/ModalMovieCard.js";
+import {handleOpenModal} from "./movieList/handleOpenModal.js";
 
 const btnSwitchLists = document.querySelector('.movies-container-switch-list');
 btnSwitchLists.addEventListener('click', (event) => {
@@ -56,6 +57,10 @@ function createMovieContainer(listID) {
 
     movieContainer.addEventListener('click', (event) => {
         handleSaveToFavourites(event, listID);
+    })
+
+    movieContainer.addEventListener('click', (event) => {
+        handleOpenModal(event);
     })
 
     return movieContainer;
@@ -129,5 +134,5 @@ function handleSaveToFavourites(event, listId) {
     }
 }
 
-window.customElements.define('my-modal', ModalMovieCard)
+window.customElements.define('x-modal', ModalMovieCard)
 

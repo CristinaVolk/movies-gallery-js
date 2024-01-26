@@ -52,7 +52,6 @@ export class ModalMovieCard extends HTMLElement {
             }
 
             const {id, releaseYear, description, movieName, imageUrl, isFavourite} = movie;
-            const heartIcon = isFavourite ? 'favourite.svg' : 'not-favourite.svg';
 
             this.shadowRoot.querySelector('.modal').insertAdjacentHTML(
                 'afterbegin',
@@ -68,6 +67,7 @@ export class ModalMovieCard extends HTMLElement {
     }
 
     _render() {
+        console.log(this.id)
         const container = document.createElement('div');
         const wrapperClass = this.visible ? 'wrapper visible' : 'wrapper';
 
