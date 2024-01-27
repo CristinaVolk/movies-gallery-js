@@ -13,7 +13,7 @@ export function setFavouriteMovies() {
     const allMovies = getAllMovies()
     if (allMovies.length) {
         const filteredMovies = allMovies.filter(({isFavourite}) => isFavourite);
-        localStorage.setItem(FAVOURITE_MOVIES, JSON.stringify(filteredMovies))
+        localStorage.setItem(FAVOURITE_MOVIES, JSON.stringify(filteredMovies|| []));
     }
 }
 
