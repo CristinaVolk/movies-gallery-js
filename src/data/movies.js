@@ -12,7 +12,7 @@ export const movies = [
         imageUrl: 'assets/images/harry-potter.jpg',
         movieName: 'Harry Potter',
         releaseYear: 2009,
-        isFavourite: false,
+        isFavourite: true,
         description: 'The best movie ever'
     },
     {
