@@ -1,4 +1,4 @@
-import {ALL_MOVIES, FAVOURITE_MOVIES} from "../localStorage/consts.js";
+import {ALL_MOVIES, FAVOURITE_MOVIES} from "../../shared/localStorage/consts.js";
 
 export function renderNewListId(event) {
     const currentListId = event.target.nextElementSibling.id;

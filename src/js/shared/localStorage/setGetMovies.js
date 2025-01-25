@@ -1,4 +1,4 @@
-import {movies} from "../../data/movies.js";
+import {movies} from "../../../data/movies.js";
 import {ALL_MOVIES, FAVOURITE_MOVIES} from "./consts.js";
 
 export function setAllMovies(moviesArray = movies) {

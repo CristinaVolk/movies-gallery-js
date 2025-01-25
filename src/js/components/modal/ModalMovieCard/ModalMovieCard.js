@@ -1,5 +1,5 @@
 import {modalMovieCardStyles} from "./ModalMovieCardStyles.js";
-import {getAllMovies} from "../../localStorage/setGetMovies.js";
+import {getAllMovies} from "../../../shared/localStorage/setGetMovies.js";
 
 export class ModalMovieCard extends HTMLElement {
     constructor() {
